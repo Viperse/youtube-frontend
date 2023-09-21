@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Watch from "./pages/Watch";
 import Layout from "./components/Layout";
 import NotFound from "./pages/NotFound";
+import Create from "./pages/Create";
 
 const router = createBrowserRouter([
     {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
                 element : <Watch />,
             }
         ]
+    },
+    {
+        path: "/create",
+        element : <Create />,
     }
 ]);
 

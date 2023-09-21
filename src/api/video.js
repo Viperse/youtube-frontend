@@ -10,3 +10,11 @@ export const getCategories = async () => {
     return await instance.get("category");
 
 }
+
+export const addVideo = async (data) => {
+    return await instance.post("video", data);  // post 데이터 넘겨 줄 때
+}
+
+export const getVideos = async () => {
+    return await instance.get("video");
+}
